@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebSafe</title>
+  <link rel="stylesheet" href="../../src/pages/shared/ui.css">
+  <link rel="stylesheet" href="../../src/pages/popup/popup.css">
+</head>
+<body>
+  <main class="popup-shell">
+    <header class="brand">
+      <span class="brand-mark" aria-hidden="true">✓</span>
+      <div><h1>WebSafe</h1><p>Schutz bleibt lokal in Brave</p></div>
+    </header>
+    <section class="status-card active">
+      <div><strong>Schutz aktiv</strong><span>Adult-Inhalte und Pop-ups werden blockiert.</span></div>
+      <label class="switch"><input type="checkbox" checked><span class="slider"></span></label>
+    </section>
+    <section class="card stats">
+      <div><span class="stat-number">12</span><span class="stat-label">Webseiten / Pop-ups</span></div>
+      <div><span class="stat-number danger-number">2</span><span class="stat-label">riskante Downloads</span></div>
+    </section>
+    <section class="controls card">
+      <label><span><strong>Strenger Pop-up-Schutz</strong><small>Stoppt automatische und fremde Skriptfenster</small></span><span class="switch"><input type="checkbox" checked><span class="slider"></span></span></label>
+      <label><span><strong>Inhaltsprüfung</strong><small>Prüft Text, Metadaten und Einbettungen lokal</small></span><span class="switch"><input type="checkbox" checked><span class="slider"></span></span></label>
+      <label><span><strong>Strikte Suche</strong><small>Erzwingt SafeSearch bei Suchmaschinen</small></span><span class="switch"><input type="checkbox" checked><span class="slider"></span></span></label>
+      <label><span><strong>Download-Schutz</strong><small>Stoppt Programme, Skripte und getarnte Dateitypen</small></span><span class="switch"><input type="checkbox" checked><span class="slider"></span></span></label>
+      <label><span><strong>Betrugswarnungen</strong><small>Entfernt gefälschte Viren- und Supportmeldungen</small></span><span class="switch"><input type="checkbox" checked><span class="slider"></span></span></label>
+    </section>
+    <section class="site-row">
+      <div><span>Aktuelle Seite</span><strong>download-portal.example</strong></div>
+      <button class="btn btn-secondary" type="button">Ausnahme</button>
+    </section>
+    <footer><button type="button">Ausnahmen verwalten</button></footer>
+  </main>
+</body>
+</html>

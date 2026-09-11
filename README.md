@@ -79,6 +79,7 @@ websafe/
 ├── assets/branding/          hochauflösendes Markenmaterial
 ├── docs/                     Architektur und Bedrohungsmodell
 ├── scripts/                  dependency-freier Build
+├── store-assets/             Bilder für den Chrome Web Store
 ├── src/                      ausgelieferter Extension-Quellcode
 │   ├── assets/icons/
 │   ├── background/
