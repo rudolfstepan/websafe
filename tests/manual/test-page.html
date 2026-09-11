@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebSafe – harmlose lokale Testseite</title>
+  <link rel="stylesheet" href="test-page.css">
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">LOKAL · HARMLOS</span>
+      <h1>WebSafe Schutztest</h1>
+      <p>Diese Seite simuliert typische Gefahren, lädt aber weder pornografische Inhalte noch Malware.</p>
+    </header>
+
+    <section class="notice">
+      <strong>Vor dem Test:</strong> WebSafe unter <code>brave://extensions</code> neu laden und prüfen, dass der Schutz aktiv ist.
+    </section>
+
+    <section class="grid">
+      <article>
+        <h2>Automatisches Pop-up</h2>
+        <p>Versucht nach kurzer Verzögerung ein fremdes Fenster zu öffnen.</p>
+        <button data-test="automatic-popup">Test starten</button>
+        <output id="result-automatic-popup">Noch nicht getestet</output>
+      </article>
+
+      <article>
+        <h2>Fremdes Skriptfenster</h2>
+        <p>Simuliert ein Werbefenster, das während eines Klicks erzeugt wird.</p>
+        <button data-test="external-popup">Test starten</button>
+        <output id="result-external-popup">Noch nicht getestet</output>
+      </article>
+
+      <article>
+        <h2>Adult-Werbeoverlay</h2>
+        <p>Fügt ein unsichtbares Overlay mit eindeutigen Testsignalen ein.</p>
+        <button data-test="adult-overlay">Test starten</button>
+        <output id="result-adult-overlay">Noch nicht getestet</output>
+      </article>
+
+      <article>
+        <h2>Gefälschte Viruswarnung</h2>
+        <p>Fügt eine unsichtbare Scareware-Warnung ein.</p>
+        <button data-test="scareware-overlay">Test starten</button>
+        <output id="result-scareware-overlay">Noch nicht getestet</output>
+      </article>
+
+      <article>
+        <h2>Riskanter Dateiname</h2>
+        <p>Eine harmlose Textdatei trägt nur zu Testzwecken die Endung <code>.exe</code>.</p>
+        <a id="risky-download" class="button" download="websafe-harmloser-test.exe">Download-Schutz testen</a>
+        <output id="result-risky-download">Noch nicht getestet</output>
+      </article>
+
+      <article>
+        <h2>Fehlalarmkontrolle</h2>
+        <p>Ein normales Dialogfenster ohne Werbe- oder Gefahrensignale muss sichtbar bleiben.</p>
+        <button data-test="safe-overlay">Test starten</button>
+        <output id="result-safe-overlay">Noch nicht getestet</output>
+      </article>
+    </section>
+  </main>
+  <script src="test-page.js"></script>
+</body>
+</html>

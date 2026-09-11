@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebSafe</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup-shell">
+    <header class="brand">
+      <span class="brand-mark" aria-hidden="true">✓</span>
+      <div><h1>WebSafe</h1><p>Schutz bleibt lokal in Brave</p></div>
+    </header>
+
+    <section id="statusCard" class="status-card active" aria-live="polite">
+      <div><strong id="statusTitle">Schutz aktiv</strong><span id="statusText">Adult-Inhalte und Pop-ups werden blockiert.</span></div>
+      <label class="switch" title="WebSafe ein- oder ausschalten">
+        <input id="enabled" type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <section class="card stats">
+      <div><span class="stat-number" id="blockedCount">0</span><span class="stat-label">Webseiten / Pop-ups</span></div>
+      <div><span class="stat-number danger-number" id="blockedDownloadCount">0</span><span class="stat-label">riskante Downloads</span></div>
+    </section>
+
+    <section class="controls card">
+      <label><span><strong>Strenger Pop-up-Schutz</strong><small>Stoppt automatische und fremde Skriptfenster</small></span><span class="switch"><input id="blockPopups" type="checkbox"><span class="slider"></span></span></label>
+      <label><span><strong>Inhaltsprüfung</strong><small>Prüft Text, Metadaten und Einbettungen lokal</small></span><span class="switch"><input id="scanContent" type="checkbox"><span class="slider"></span></span></label>
+      <label><span><strong>Strikte Suche</strong><small>Erzwingt SafeSearch bei Suchmaschinen</small></span><span class="switch"><input id="strictSearch" type="checkbox"><span class="slider"></span></span></label>
+      <label><span><strong>Download-Schutz</strong><small>Stoppt Programme, Skripte und getarnte Dateitypen</small></span><span class="switch"><input id="blockRiskyDownloads" type="checkbox"><span class="slider"></span></span></label>
+      <label><span><strong>Betrugswarnungen</strong><small>Entfernt gefälschte Viren- und Supportmeldungen</small></span><span class="switch"><input id="blockScareware" type="checkbox"><span class="slider"></span></span></label>
+    </section>
+
+    <section class="site-row">
+      <div><span>Aktuelle Seite</span><strong id="currentHost">–</strong></div>
+      <button id="toggleSite" class="btn btn-secondary" type="button">Ausnahme</button>
+    </section>
+
+    <footer><button id="openOptions" type="button">Ausnahmen verwalten</button></footer>
+  </main>
+  <script src="../../shared/filter.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

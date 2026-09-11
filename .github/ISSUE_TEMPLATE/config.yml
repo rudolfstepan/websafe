@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sicherheitslücke privat melden
+    url: https://github.com/rudolfstepan/websafe/security/advisories/new
+    about: Bitte keine Sicherheitsdetails in öffentlichen Issues veröffentlichen.

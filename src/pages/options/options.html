@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WebSafe – Einstellungen</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="options-shell">
+    <header class="brand"><span class="brand-mark">✓</span><div><h1>WebSafe Einstellungen</h1><p>Lokaler Schutz für Brave</p></div></header>
+    <section class="intro">
+      <h2>Ausnahmen</h2>
+      <p>Domains auf dieser Liste werden nicht geprüft oder blockiert. Füge nur Seiten hinzu, denen du vertraust.</p>
+    </section>
+    <form id="allowForm" class="add-form">
+      <label for="domain">Domain, z. B. example.org</label>
+      <div><input id="domain" type="text" inputmode="url" autocomplete="off" placeholder="example.org"><button class="btn btn-primary" type="submit">Hinzufügen</button></div>
+      <p id="formError" role="alert"></p>
+    </form>
+    <section class="card list-card">
+      <div id="emptyState">Noch keine Ausnahmen eingerichtet.</div>
+      <ul id="allowlist"></ul>
+    </section>
+    <p class="note"><strong>Download-Schutz:</strong> WebSafe stoppt ausführbare Programme, Skripte, Verknüpfungen, Datenträgerabbilder, Makro-Dokumente und Dateien mit irreführender Doppel-Endung. Die Funktion lässt sich im WebSafe-Menü steuern.</p>
+    <p class="note"><strong>Wichtig:</strong> Kein Browserfilter ersetzt ein aktuelles Betriebssystem und einen Virenscanner. Lass außerdem Braves Safe Browsing unter <code>brave://settings/security</code> aktiviert. Kein rein lokaler Inhaltsfilter kann jeden neuen oder bildbasierten Inhalt mit hundertprozentiger Sicherheit erkennen.</p>
+  </main>
+  <script src="../../shared/filter.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

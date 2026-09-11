@@ -1,0 +1,22 @@
+{
+  "name": "websafe-extension",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Privacy-friendly Brave/Chromium extension against explicit content, intrusive pop-ups, scareware and risky downloads.",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rudolfstepan/websafe.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test:unit": "node tests/unit/filter.test.js",
+    "test:manifest": "node tests/validate-extension.js",
+    "test": "npm run test:unit && npm run test:manifest",
+    "check": "npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

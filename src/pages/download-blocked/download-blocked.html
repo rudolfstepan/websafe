@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Riskanter Download blockiert</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="../blocked/blocked.css">
+</head>
+<body>
+  <main class="blocked-shell">
+    <div class="shield danger-shield" aria-hidden="true">!</div>
+    <p class="eyebrow danger-text">WEBSafe DOWNLOAD-SCHUTZ</p>
+    <h1>Riskanter Download gestoppt.</h1>
+    <p class="explanation" id="reason">Dieser Dateityp kann aktive oder schädliche Inhalte ausführen.</p>
+    <div class="url-box">
+      <span>Datei</span><code id="filename">Unbekannte Datei</code>
+      <span>Quelle</span><code id="source">Unbekannte Quelle</code>
+    </div>
+    <div class="actions">
+      <button id="closeTab" class="btn btn-primary" type="button">Verstanden</button>
+      <button id="openOptions" class="btn btn-secondary" type="button">Einstellungen</button>
+    </div>
+    <p class="privacy">WebSafe hat den Download abgebrochen. Es wurde keine Datei geöffnet.</p>
+  </main>
+  <script src="download-blocked.js"></script>
+</body>
+</html>

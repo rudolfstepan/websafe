@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "priority": 10,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/pages/blocked/blocked.html" } },
+    "condition": {
+      "requestDomains": [
+        "4tube.com", "8muses.com", "adultfriendfinder.com", "beeg.com",
+        "brazzers.com", "cam4.com", "chaturbate.com", "clips4sale.com",
+        "efukt.com", "eporner.com", "erome.com", "fapello.com",
+        "fapster.xxx", "hclips.com", "hentaihaven.xxx", "hqporner.com",
+        "imagefap.com", "ixxx.com", "livejasmin.com", "literotica.com",
+        "manyvids.com", "motherless.com", "nhentai.net", "nudevista.com",
+        "onlyfans.com", "porn.com", "porn300.com", "pornhat.com",
+        "pornhub.com", "pornpics.com", "pornrox.com", "pornwild.com",
+        "redgifs.com", "redtube.com", "rule34.xxx", "sex.com",
+        "spankbang.com", "stripchat.com", "thumbzilla.com", "tnaflix.com",
+        "tube8.com", "txxx.com", "upornia.com", "xhamster.com",
+        "xnxx.com", "xvideos.com", "youporn.com", "yuvutu.com"
+      ],
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 10,
+    "action": { "type": "block" },
+    "condition": {
+      "requestDomains": [
+        "4tube.com", "8muses.com", "adultfriendfinder.com", "beeg.com",
+        "brazzers.com", "cam4.com", "chaturbate.com", "clips4sale.com",
+        "efukt.com", "eporner.com", "erome.com", "fapello.com",
+        "fapster.xxx", "hclips.com", "hentaihaven.xxx", "hqporner.com",
+        "imagefap.com", "ixxx.com", "livejasmin.com", "literotica.com",
+        "manyvids.com", "motherless.com", "nhentai.net", "nudevista.com",
+        "onlyfans.com", "porn.com", "porn300.com", "pornhat.com",
+        "pornhub.com", "pornpics.com", "pornrox.com", "pornwild.com",
+        "redgifs.com", "redtube.com", "rule34.xxx", "sex.com",
+        "spankbang.com", "stripchat.com", "thumbzilla.com", "tnaflix.com",
+        "tube8.com", "txxx.com", "upornia.com", "xhamster.com",
+        "xnxx.com", "xvideos.com", "youporn.com", "yuvutu.com"
+      ],
+      "resourceTypes": [
+        "sub_frame", "stylesheet", "script", "image", "font", "object",
+        "xmlhttprequest", "ping", "csp_report", "media", "websocket",
+        "webtransport", "webbundle", "other"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 5,
+    "action": { "type": "redirect", "redirect": { "extensionPath": "/pages/blocked/blocked.html" } },
+    "condition": {
+      "regexFilter": "(^|[\\./?&=_-])(porn|porno|pornografie|xxx|hentai|rule34|gangbang|blowjob|camgirls?|sexcam|sexvideos?|nudes|onlyfans)([\\./?&=_-]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 5,
+    "action": { "type": "block" },
+    "condition": {
+      "regexFilter": "(^|[\\./?&=_-])(porn|porno|pornografie|xxx|hentai|rule34|gangbang|blowjob|camgirls?|sexcam|sexvideos?|nudes|onlyfans)([\\./?&=_-]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "resourceTypes": ["sub_frame", "object", "media", "xmlhttprequest", "websocket"]
+    }
+  }
+]

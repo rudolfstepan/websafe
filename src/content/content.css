@@ -1,0 +1,18 @@
+#websafe-notice {
+  all: initial;
+  position: fixed;
+  z-index: 2147483647;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  max-width: min(560px, calc(100vw - 32px));
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  background: #13382f;
+  color: #f5fffb;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.3);
+  font: 600 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+  text-align: center;
+}

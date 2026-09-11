@@ -1,0 +1,22 @@
+name: Funktionswunsch
+description: Eine neue Schutzfunktion oder Verbesserung vorschlagen
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Problem und Ziel
+      description: Welches konkrete Sicherheits- oder Bedienproblem soll gelöst werden?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Lösungsvorschlag
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Mögliche Fehlalarme oder Datenschutzfolgen

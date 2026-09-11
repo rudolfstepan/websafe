@@ -1,0 +1,42 @@
+name: Fehlerbericht
+description: Einen reproduzierbaren Fehler oder Fehlalarm melden
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Danke für den Bericht. Bitte keine echten expliziten Inhalte, Malware oder privaten Daten hochladen.
+  - type: input
+    id: version
+    attributes:
+      label: WebSafe-Version
+      placeholder: z. B. 1.1.0
+    validations:
+      required: true
+  - type: input
+    id: brave
+    attributes:
+      label: Brave-Version und Betriebssystem
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problembeschreibung
+      description: Was ist passiert und was wäre erwartet gewesen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduktionsschritte
+      placeholder: Bitte möglichst ohne sensible oder schädliche Links.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Sicherheitscheck
+      options:
+        - label: Dieser Bericht enthält keine echte Malware oder explizite Medien.
+          required: true

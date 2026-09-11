@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "WebSafe",
+  "version": "1.1.0",
+  "description": "Lokaler Schutz vor pornografischen Inhalten, Pop-ups, Betrugsseiten und riskanten Downloads.",
+  "minimum_chrome_version": "111",
+  "permissions": [
+    "storage",
+    "tabs",
+    "downloads",
+    "webNavigation",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"
+  },
+  "action": {
+    "default_title": "WebSafe",
+    "default_popup": "pages/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png"
+    }
+  },
+  "options_page": "pages/options/options.html",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/page-guard.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    },
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["shared/filter.js", "content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "blocklist",
+        "enabled": true,
+        "path": "rules/blocklist.json"
+      }
+    ]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["pages/blocked/blocked.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

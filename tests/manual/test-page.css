@@ -1,0 +1,19 @@
+:root { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; color: #14352d; background: #f1f7f4; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding: 48px 0 70px; }
+header { max-width: 680px; }
+.badge { display: inline-block; padding: 6px 9px; border-radius: 99px; background: #dff4ea; color: #096847; font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+h1 { margin: 13px 0 7px; font-size: clamp(32px, 6vw, 52px); letter-spacing: -.05em; }
+header p, article p { color: #62716c; line-height: 1.55; }
+.notice { margin: 28px 0; padding: 14px 17px; border: 1px solid #badfce; border-radius: 12px; background: white; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+article { display: flex; min-height: 230px; flex-direction: column; padding: 22px; border: 1px solid #d8e4df; border-radius: 16px; background: white; box-shadow: 0 8px 25px rgba(24,70,55,.05); }
+article h2 { margin: 0; font-size: 18px; }
+article p { flex: 1; font-size: 13px; }
+button, .button { display: inline-block; align-self: flex-start; border: 0; border-radius: 9px; padding: 10px 13px; background: #168a64; color: white; cursor: pointer; font: 700 12px/1 system-ui; text-decoration: none; }
+button:hover, .button:hover { background: #0e6549; }
+output { display: block; margin-top: 13px; color: #74827d; font-size: 11px; line-height: 1.45; }
+output.pass { color: #08734e; font-weight: 800; }
+output.fail { color: #b33b32; font-weight: 800; }
+.websafe-test-overlay { position: fixed; z-index: 999999; inset: 8vh 8vw; width: 84vw; height: 84vh; background: #fff; }

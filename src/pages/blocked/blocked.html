@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Von WebSafe blockiert</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <main class="blocked-shell">
+    <div class="shield" aria-hidden="true">✓</div>
+    <p class="eyebrow">WEBSAFE HAT EINGEGRIFFEN</p>
+    <h1>Diese Seite wurde blockiert.</h1>
+    <p class="explanation" id="reason">Die Seite enthält möglicherweise pornografische Inhalte.</p>
+    <div class="url-box"><span>Blockierte Adresse</span><code id="blockedUrl">Nicht verfügbar</code></div>
+    <div class="actions">
+      <button id="goBack" class="btn btn-primary" type="button">Sicher zurück</button>
+      <button id="closeTab" class="btn btn-secondary" type="button">Tab schließen</button>
+    </div>
+    <p class="privacy">Die Prüfung fand lokal in deinem Browser statt.</p>
+  </main>
+  <script src="blocked.js"></script>
+</body>
+</html>

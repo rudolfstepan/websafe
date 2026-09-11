@@ -1,0 +1,19 @@
+body { min-height: 100vh; background: #f2f7f4; }
+.options-shell { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 40px 0 70px; }
+.intro { margin-top: 42px; }
+.intro h2 { margin: 0 0 7px; font-size: 28px; letter-spacing: -.035em; }
+.intro p { max-width: 590px; margin: 0; color: var(--muted); line-height: 1.6; }
+.add-form { margin-top: 25px; }
+.add-form > label { display: block; margin-bottom: 7px; font-size: 12px; font-weight: 700; }
+.add-form > div { display: flex; gap: 9px; }
+.add-form input { flex: 1; min-width: 0; border: 1px solid var(--line); border-radius: 10px; padding: 11px 13px; background: white; color: var(--ink); outline: 0; }
+.add-form input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(22,138,100,.12); }
+#formError { min-height: 18px; margin: 6px 0 0; color: #b23a3a; font-size: 11px; }
+.list-card { margin-top: 12px; overflow: hidden; }
+#emptyState { padding: 24px; color: var(--muted); text-align: center; font-size: 13px; }
+#allowlist { margin: 0; padding: 0; list-style: none; }
+#allowlist li { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 16px; }
+#allowlist li + li { border-top: 1px solid var(--line); }
+#allowlist code { overflow: hidden; font-size: 13px; text-overflow: ellipsis; }
+.remove { border: 0; background: transparent; color: #a23232; cursor: pointer; font-weight: 700; }
+.note { margin: 24px 2px; color: var(--muted); font-size: 12px; line-height: 1.65; }
