@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b7a58">
+  <meta name="description" content="Datenschutzerklärung der lokalen WebSafe Browser-Erweiterung.">
+  <title>Datenschutz – WebSafe</title>
+  <link rel="icon" type="image/png" href="assets/websafe-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <a class="brand" href="index.html"><img src="assets/websafe-icon.png" width="44" height="44" alt=""><span>WebSafe</span></a>
+      <a class="button button-secondary compact-button" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section class="legal-hero">
+      <div class="container">
+        <p class="eyebrow"><span></span> Transparent und lokal</p>
+        <h1>Datenschutz ohne Kleingedrucktes.</h1>
+        <p>WebSafe verarbeitet Schutzsignale lokal im Browser. Es gibt keine Telemetrie, keine Benutzerkonten und keine Übertragung an den Entwickler.</p>
+      </div>
+    </section>
+
+    <article class="container legal-content">
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Zurück zu WebSafe</a>
+
+      <h2>Kurzfassung</h2>
+      <p>WebSafe sendet keine besuchten URLs, Seiteninhalte oder Downloadinformationen an den Entwickler oder einen externen Analysedienst. Die Erweiterung arbeitet innerhalb des lokalen Brave- beziehungsweise Chromium-Profils.</p>
+
+      <h2>Lokal verarbeitete Daten</h2>
+      <ul>
+        <li>URL und Hostname einer besuchten Seite für lokale Filterentscheidungen</li>
+        <li>Seitentitel, Metadaten und begrenzte sichtbare Textausschnitte</li>
+        <li>Links und Medienadressen zur Erkennung verdächtiger Einbettungen</li>
+        <li>Dateiname, Quelle, MIME-Typ und Braves Gefahrenstatus eines Downloads</li>
+        <li>Einstellungen, Ausnahmeliste und aggregierte Blockzähler</li>
+      </ul>
+
+      <h2>Speicherung</h2>
+      <p>Einstellungen, Domain-Ausnahmen und Zähler werden mit <code>chrome.storage.local</code> im lokalen Browserprofil gespeichert. WebSafe betreibt keinen Server und besitzt keine zentrale Nutzerdatenbank.</p>
+
+      <h2>Datenübertragung</h2>
+      <p>WebSafe selbst überträgt keine Schutzdaten. Externe Links auf dieser Website führen zu GitHub und unterliegen dessen eigener Datenschutzerklärung. Braves eingebautes Safe Browsing arbeitet unabhängig von WebSafe nach den Einstellungen des Browsers.</p>
+
+      <h2>Berechtigungen</h2>
+      <p>Die Erweiterung benötigt Seitenzugriff, um Pop-ups, Navigationen und Overlays zu erkennen, sowie die Download-Berechtigung, um riskante Downloads rechtzeitig abzubrechen. Die Berechtigungen werden ausschließlich für die dokumentierten Schutzfunktionen verwendet.</p>
+
+      <h2>Daten löschen</h2>
+      <p>Beim Entfernen der Erweiterung löscht Brave den zugehörigen Extension-Speicher. Einstellungen können außerdem durch eine Neuinstallation zurückgesetzt werden.</p>
+
+      <h2>Open Source</h2>
+      <p>Die vollständige Implementierung, alle Filterregeln und die automatisierten Tests sind im <a href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">öffentlichen GitHub-Repository</a> einsehbar.</p>
+
+      <h2>Stand</h2>
+      <p>11. September 2026</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom legal-footer"><span>© <span data-year>2026</span> WebSafe Contributors.</span><span><a href="index.html">Startseite</a> · <a href="https://github.com/rudolfstepan/websafe/blob/main/LICENSE" target="_blank" rel="noopener">MIT-Lizenz</a></span></div>
+  </footer>
+</body>
+</html>

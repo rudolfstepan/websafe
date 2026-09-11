@@ -13,7 +13,8 @@
     "build": "node scripts/build.mjs",
     "test:unit": "node tests/unit/filter.test.js",
     "test:manifest": "node tests/validate-extension.js",
-    "test": "npm run test:unit && npm run test:manifest",
+    "test:website": "node tests/validate-website.js",
+    "test": "npm run test:unit && npm run test:manifest && npm run test:website",
     "check": "npm test && npm run build"
   },
   "engines": {

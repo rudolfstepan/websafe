@@ -87,10 +87,12 @@ websafe/
 │   ├── rules/
 │   ├── shared/
 │   └── manifest.json
-└── tests/
-    ├── manual/               harmlose interaktive Testseite
-    ├── unit/
-    └── validate-extension.js
+├── tests/
+│   ├── manual/               harmlose interaktive Testseite
+│   ├── unit/
+│   ├── validate-extension.js
+│   └── validate-website.js
+└── website/                  statische Projektwebsite
 ```
 
 Weitere technische Details stehen in der
@@ -133,3 +135,14 @@ Medien dürfen nicht als Testmaterial in dieses Repository aufgenommen werden.
 ## Lizenz
 
 WebSafe steht unter der [MIT-Lizenz](LICENSE).
+
+## Projektwebsite
+
+Die statische, responsive Landingpage liegt unter `website/` und benötigt weder
+Buildschritt noch externe Bibliotheken. Für eine lokale Vorschau:
+
+```powershell
+python -m http.server 8080 --directory website
+```
+
+Danach `http://localhost:8080` öffnen.

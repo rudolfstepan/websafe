@@ -13,7 +13,13 @@ if (path.dirname(outputDirectory) !== projectRoot || path.basename(outputDirecto
 
 await rm(outputDirectory, { recursive: true, force: true });
 await mkdir(outputDirectory, { recursive: true });
-await cp(sourceDirectory, outputDirectory, { recursive: true });
+await cp(sourceDirectory, outputDirectory, {
+  recursive: true,
+  filter(source) {
+    const segments = path.relative(sourceDirectory, source).split(path.sep);
+    return !segments.includes("_metadata") && !segments.includes(".DS_Store");
+  }
+});
 
 async function countFiles(directory) {
   let count = 0;
