@@ -5,6 +5,7 @@ websafe-*.zip
 # Browser-generated extension metadata and test profiles
 _metadata/
 .brave-test-profile/
+.auth/
 
 # Dependencies and logs
 node_modules/
