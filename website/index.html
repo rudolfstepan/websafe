@@ -1,39 +1,42 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b7a58">
-  <meta name="description" content="WebSafe schützt Brave und Chromium lokal vor unerwarteten Adult-Inhalten, aggressiven Pop-ups, Scareware und riskanten Downloads.">
+  <meta name="description" content="WebSafe protects Chrome, Brave and Chromium-based browsers locally from unexpected adult content, intrusive pop-ups, scareware and risky downloads.">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="de_AT">
-  <meta property="og:title" content="WebSafe – Sicher surfen. Ruhig bleiben.">
-  <meta property="og:description" content="Open-Source-Browserschutz ohne Telemetrie und ohne Cloud-Analyse.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="WebSafe – Browse safely. Stay calm.">
+  <meta property="og:description" content="Open-source browser protection without telemetry or cloud analysis.">
   <meta property="og:image" content="assets/websafe-icon.png">
-  <title>WebSafe – Lokaler Schutz für Brave</title>
+  <title>WebSafe – Local protection for Chrome, Brave and Chromium-based browsers</title>
   <link rel="icon" type="image/png" href="assets/websafe-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+  <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="site-header" id="site-header">
-    <nav class="nav container" aria-label="Hauptnavigation">
+    <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="index.html" aria-current="page">
         <img src="assets/websafe-icon.png" width="44" height="44" alt="">
         <span>WebSafe</span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span><span class="sr-only">Menü öffnen</span>
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
       </button>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#schutz">Schutz</a></li>
-        <li><a href="#funktionen">Funktionen</a></li>
+        <li><a href="#schutz">Protection</a></li>
+        <li><a href="#funktionen">Features</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#fragen">FAQ</a></li>
-        <li><a class="nav-github" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a class="nav-github" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">GitHub · Development <span aria-hidden="true">↗</span></a></li>
       </ul>
+      <div class="language-switch" data-language-switch role="group" aria-label="Choose language" hidden><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div>
     </nav>
   </header>
 
@@ -43,21 +46,21 @@
       <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Lokaler Schutz für Brave</p>
-          <h1>Sicher surfen.<br><em>Ruhig bleiben.</em></h1>
-          <p class="hero-lead">WebSafe stoppt unerwartete Adult-Inhalte, aggressive Werbe-Pop-ups, gefälschte Viruswarnungen und riskante Downloads – bevor sie dich erreichen.</p>
+          <p class="eyebrow"><span></span> Local protection for Chrome, Brave and Chromium-based browsers</p>
+          <h1>Browse safely.<br><em>Stay calm.</em></h1>
+          <p class="hero-lead">WebSafe stops unexpected adult content, intrusive advertising pop-ups, fake virus alerts and risky downloads before they reach you.</p>
           <div class="actions">
-            <a class="button button-primary" href="#installation">WebSafe installieren <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Quellcode ansehen</a>
+            <a class="button button-primary" href="https://chromewebstore.google.com/detail/mkmceahekngdjiplgonjfjkgldblimjg?utm_source=item-share-cb" target="_blank" rel="noopener">Install WebSafe <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">View source code</a>
           </div>
-          <ul class="trust-row" aria-label="WebSafe Eigenschaften">
+          <ul class="trust-row" aria-label="WebSafe features">
             <li>Open Source</li>
-            <li>Keine Telemetrie</li>
-            <li>100 % lokal</li>
+            <li>No telemetry</li>
+            <li>100% local</li>
           </ul>
         </div>
 
-        <div class="hero-product" aria-label="Darstellung des WebSafe-Schutzes">
+        <div class="hero-product" aria-label="Illustration of WebSafe protection">
           <div class="browser-window">
             <div class="browser-bar">
               <div class="browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -72,69 +75,69 @@
               <div class="download-cards"><span></span><span></span><span></span></div>
               <div class="blocked-overlay">
                 <div class="mini-shield"><img src="assets/websafe-icon.png" alt="" width="54" height="54"></div>
-                <div><strong>Werbe-Pop-up blockiert</strong><small>WebSafe hat eine riskante Weiterleitung verhindert.</small></div>
+                <div><strong>Advertising pop-up blocked</strong><small>WebSafe prevented a risky redirect.</small></div>
               </div>
             </div>
           </div>
-          <div class="floating-status status-top"><span class="pulse"></span><div><strong>Schutz aktiv</strong><small>Lokale Prüfung</small></div></div>
-          <div class="floating-status status-bottom"><span class="status-number">12</span><div><strong>Gefahren gestoppt</strong><small>Heute auf Download-Seiten</small></div></div>
+          <div class="floating-status status-top"><span class="pulse"></span><div><strong>Protection active</strong><small>Local checks</small></div></div>
+          <div class="floating-status status-bottom"><span class="status-number">12</span><div><strong>Threats stopped</strong><small>On download sites today</small></div></div>
         </div>
       </div>
     </section>
 
-    <section class="signal-strip" aria-label="Schutzstatus">
+    <section class="signal-strip" aria-label="Protection status">
       <div class="container signal-grid">
-        <div><strong>0</strong><span>Cloud-Anfragen</span></div>
-        <div><strong>5</strong><span>Schutzebenen</span></div>
-        <div><strong>MV3</strong><span>Moderne Extension</span></div>
-        <div><strong>MIT</strong><span>Offene Lizenz</span></div>
+        <div><strong>0</strong><span>Cloud requests</span></div>
+        <div><strong>5</strong><span>Protection layers</span></div>
+        <div><strong>MV3</strong><span>Modern extension</span></div>
+        <div><strong>MIT</strong><span>Open license</span></div>
       </div>
     </section>
 
     <section class="section" id="funktionen">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow"><span></span> Mehrere Ebenen, ein ruhiges Web</p>
-          <h2>Schutz, der eingreift,<br>bevor etwas passiert.</h2>
-          <p>WebSafe kombiniert schnelle Browserregeln mit lokaler Inhaltsanalyse. Jede Ebene übernimmt genau die Aufgabe, die sie zuverlässig lösen kann.</p>
+          <p class="eyebrow"><span></span> Multiple layers, a calmer web</p>
+          <h2>Protection that steps in<br>before anything happens.</h2>
+          <p>WebSafe combines fast browser rules with local content analysis. Each layer handles the task it can perform reliably.</p>
         </div>
 
         <div class="feature-grid">
           <article class="feature-card accent-card">
             <span class="feature-number">01</span>
             <div class="feature-icon" aria-hidden="true">↗</div>
-            <h3>Pop-ups stoppen</h3>
-            <p>Automatische Fenster und fremde Skript-Pop-ups werden direkt beim Öffnungsversuch abgefangen.</p>
+            <h3>Stop pop-ups</h3>
+            <p>Automatic windows and third-party script pop-ups are intercepted as they try to open.</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">02</span>
             <div class="feature-icon" aria-hidden="true">▦</div>
-            <h3>Overlays entfernen</h3>
-            <p>Nachgeladene Adult-Werbung und verdächtige Fremd-Frames verschwinden aus der Seite.</p>
+            <h3>Remove overlays</h3>
+            <p>Dynamically loaded adult ads and suspicious third-party frames are removed from the page.</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">03</span>
             <div class="feature-icon" aria-hidden="true">↓</div>
-            <h3>Downloads prüfen</h3>
-            <p>Programme, Skripte, Makro-Dateien und getarnte Doppel-Endungen werden vor dem Speichern blockiert.</p>
+            <h3>Check downloads</h3>
+            <p>Programs, scripts, macro files and disguised double extensions are blocked before saving.</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">04</span>
             <div class="feature-icon" aria-hidden="true">!</div>
-            <h3>Scareware erkennen</h3>
-            <p>Gefälschte Virusmeldungen und betrügerische Support-Aufforderungen werden zuverlässig ausgeblendet.</p>
+            <h3>Detect scareware</h3>
+            <p>Fake virus alerts and fraudulent support prompts are reliably hidden.</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">05</span>
             <div class="feature-icon" aria-hidden="true">⌕</div>
-            <h3>SafeSearch erzwingen</h3>
-            <p>Strikte Sucheinstellungen werden bei bekannten Suchmaschinen automatisch ergänzt.</p>
+            <h3>Enforce SafeSearch</h3>
+            <p>Strict search settings are automatically applied to supported search engines.</p>
           </article>
           <article class="feature-card">
             <span class="feature-number">06</span>
             <div class="feature-icon" aria-hidden="true">◎</div>
-            <h3>Lokal entscheiden</h3>
-            <p>URLs, Seitensignale und Download-Metadaten verlassen für WebSafe niemals deinen Browser.</p>
+            <h3>Decide locally</h3>
+            <p>WebSafe never sends URLs, page signals or download metadata outside your browser.</p>
           </article>
         </div>
       </div>
@@ -152,13 +155,13 @@
           <span class="orbit-label label-three">FILE</span>
         </div>
         <div class="protection-copy">
-          <p class="eyebrow"><span></span> Schutz in Echtzeit</p>
-          <h2>Nicht nur blockieren.<br>Früh verhindern.</h2>
-          <p>Viele Download-Seiten tarnen Werbung als Klick, öffnen Fenster während einer Benutzeraktion oder leiten über mehrere Ziele weiter. WebSafe setzt deshalb schon vor dem Seitenaufbau und vor dem eigentlichen Download an.</p>
+          <p class="eyebrow"><span></span> Real-time protection</p>
+          <h2>Go beyond blocking.<br>Prevent threats early.</h2>
+          <p>Many download sites disguise ads as clickable content, open windows during user actions or redirect through multiple destinations. WebSafe intervenes before the page loads and before the download starts.</p>
           <ul class="check-list">
-            <li><span>✓</span><div><strong>Vor dem Laden</strong><small>Bekannte Ziele und eindeutige URL-Muster werden durch Browserregeln gestoppt.</small></div></li>
-            <li><span>✓</span><div><strong>Während der Nutzung</strong><small>Der Seitenwächter kontrolliert Pop-ups, Einbettungen und neue Overlays.</small></div></li>
-            <li><span>✓</span><div><strong>Beim Download</strong><small>Dateiname, Übertragung und Braves Gefahrenstatus werden nochmals geprüft.</small></div></li>
+            <li><span>✓</span><div><strong>Before loading</strong><small>Browser rules block known destinations and clear URL patterns.</small></div></li>
+            <li><span>✓</span><div><strong>While browsing</strong><small>The page guard monitors pop-ups, embedded content and new overlays.</small></div></li>
+            <li><span>✓</span><div><strong>When downloading</strong><small>The filename, transfer and browser-reported danger status are checked again.</small></div></li>
           </ul>
         </div>
       </div>
@@ -167,31 +170,29 @@
     <section class="section section-dark" id="installation">
       <div class="container">
         <div class="section-heading dark-heading">
-          <p class="eyebrow"><span></span> In wenigen Minuten bereit</p>
-          <h2>Vom Quellcode zum Schutz<br>in drei Schritten.</h2>
+          <p class="eyebrow"><span></span> Ready in minutes</p>
+          <h2>From the Web Store to protection<br>in three steps.</h2>
         </div>
         <div class="steps">
           <article class="step">
             <span>1</span>
-            <h3>Repository laden</h3>
-            <p>WebSafe von GitHub klonen oder als ZIP herunterladen.</p>
-            <code>git clone https://github.com/rudolfstepan/websafe.git</code>
+            <h3>Open the Chrome Web Store</h3>
+            <p>Open the WebSafe listing in the Chrome Web Store using the link below.</p>
           </article>
           <article class="step">
             <span>2</span>
-            <h3>Extension bauen</h3>
-            <p>Mit Node.js wird ohne zusätzliche Pakete der Ordner <code>dist/</code> erzeugt.</p>
-            <code>npm run build</code>
+            <h3>Add the extension</h3>
+            <p>Start the installation in the Web Store and confirm adding the extension in your browser.</p>
           </article>
           <article class="step">
             <span>3</span>
-            <h3>In Brave laden</h3>
-            <p>Unter <code>brave://extensions</code> den Entwicklermodus aktivieren und <code>dist/</code> auswählen.</p>
+            <h3>Open WebSafe</h3>
+            <p>Open WebSafe from your browser's extensions menu and adjust the protection features to suit your needs.</p>
           </article>
         </div>
         <div class="install-action">
-          <a class="button button-light" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Repository öffnen <span aria-hidden="true">↗</span></a>
-          <span>Manifest V3 · Brave & Chromium · Version 1.1.0</span>
+          <a class="button button-light" href="https://chromewebstore.google.com/detail/mkmceahekngdjiplgonjfjkgldblimjg?utm_source=item-share-cb" target="_blank" rel="noopener">Open in Chrome Web Store <span aria-hidden="true">↗</span></a>
+          <span>Manifest V3 · Chrome, Brave and Chromium-based browsers · Version <span data-extension-version>1.1.0</span></span>
         </div>
       </div>
     </section>
@@ -199,16 +200,16 @@
     <section class="section privacy-section">
       <div class="container privacy-grid">
         <div>
-          <p class="eyebrow"><span></span> Privat by Design</p>
-          <h2>Dein Browserverlauf<br>bleibt dein Browserverlauf.</h2>
-          <p>WebSafe braucht kein Konto, keine Cloud und keine Analyse-API. Alle Entscheidungen finden lokal im jeweiligen Brave-Profil statt.</p>
-          <a class="text-link" href="privacy.html">Datenschutzerklärung lesen <span aria-hidden="true">→</span></a>
+          <p class="eyebrow"><span></span> Private by design</p>
+          <h2>Your browsing history<br>stays yours.</h2>
+          <p>WebSafe needs no account, cloud or analytics API. All decisions are made locally within your browser profile.</p>
+          <a class="text-link" href="privacy.html">Read the privacy policy <span aria-hidden="true">→</span></a>
         </div>
         <ul class="privacy-list">
-          <li><span>01</span><div><strong>Keine Übertragung</strong><p>Besuchte URLs und Seiteninhalte werden nicht an den Entwickler gesendet.</p></div></li>
-          <li><span>02</span><div><strong>Keine Telemetrie</strong><p>Keine Analytics, kein Tracking und keine Werbe-SDKs.</p></div></li>
-          <li><span>03</span><div><strong>Volle Transparenz</strong><p>Quellcode, Regeln und Tests sind öffentlich auf GitHub einsehbar.</p></div></li>
-          <li><span>04</span><div><strong>Bewusste Kontrolle</strong><p>Schutzebenen und vertrauenswürdige Ausnahmen lassen sich lokal verwalten.</p></div></li>
+          <li><span>01</span><div><strong>No data transfers</strong><p>Visited URLs and page content are not sent to the developer.</p></div></li>
+          <li><span>02</span><div><strong>No telemetry</strong><p>No analytics, tracking or advertising SDKs.</p></div></li>
+          <li><span>03</span><div><strong>Full transparency</strong><p>Source code, rules and tests are publicly available on GitHub.</p></div></li>
+          <li><span>04</span><div><strong>You are in control</strong><p>Protection layers and trusted exceptions can be managed locally.</p></div></li>
         </ul>
       </div>
     </section>
@@ -216,30 +217,30 @@
     <section class="section section-wash" id="fragen">
       <div class="container faq-grid">
         <div class="section-heading">
-          <p class="eyebrow"><span></span> Häufige Fragen</p>
-          <h2>Klarheit gehört<br>zum Schutz.</h2>
-          <p>Noch etwas offen? Im GitHub-Repository können Fragen und Fehlalarme als Issue gemeldet werden.</p>
+          <p class="eyebrow"><span></span> Frequently asked questions</p>
+          <h2>Clarity is part<br>of protection.</h2>
+          <p>Still have questions? Use GitHub issues to ask questions or report false positives.</p>
         </div>
         <div class="faq-list">
           <details>
-            <summary>Ersetzt WebSafe einen Virenscanner?<span>+</span></summary>
-            <p>Nein. WebSafe verhindert typische Browsergefahren, kann aber keine vollständige Dateianalyse durchführen. Brave Safe Browsing und ein aktueller Virenscanner sollten aktiv bleiben.</p>
+            <summary>Does WebSafe replace antivirus software?<span>+</span></summary>
+            <p>No. WebSafe prevents common browser threats but cannot perform a full file analysis. Keep your browser's built-in Safe Browsing protection and up-to-date antivirus software enabled.</p>
           </details>
           <details>
-            <summary>Werden normale Downloads blockiert?<span>+</span></summary>
-            <p>Gewöhnliche PDFs, Bilder, Videos und Archive werden nicht allein wegen ihrer Endung gesperrt. WebSafe konzentriert sich auf ausführbare, skriptfähige oder getarnte Dateien.</p>
+            <summary>Are ordinary downloads blocked?<span>+</span></summary>
+            <p>Ordinary PDFs, images, videos and archives are not blocked solely because of their extension. WebSafe focuses on executable, script-capable or disguised files.</p>
           </details>
           <details>
-            <summary>Funktioniert WebSafe im Inkognitomodus?<span>+</span></summary>
-            <p>Ja, nachdem „Im Inkognitomodus zulassen“ in den Erweiterungsdetails von Brave bewusst aktiviert wurde.</p>
+            <summary>Does WebSafe work in incognito mode?<span>+</span></summary>
+            <p>Yes, after you enable “Allow in incognito” in your browser's extension details.</p>
           </details>
           <details>
-            <summary>Kann ich Fehlalarme umgehen?<span>+</span></summary>
-            <p>Vertrauenswürdige Domains können lokal als Ausnahme hinterlegt werden. Ausnahmen sollten nur bewusst und sparsam verwendet werden.</p>
+            <summary>Can I bypass false positives?<span>+</span></summary>
+            <p>You can add trusted domains as local exceptions. Use exceptions deliberately and sparingly.</p>
           </details>
           <details>
-            <summary>Ist WebSafe wirklich Open Source?<span>+</span></summary>
-            <p>Ja. Das vollständige Projekt steht unter der MIT-Lizenz, inklusive Buildskript, Tests und Sicherheitsdokumentation.</p>
+            <summary>Is WebSafe really open source?<span>+</span></summary>
+            <p>Yes. The entire project is available under the MIT License, including the build script, tests and security documentation.</p>
           </details>
         </div>
       </div>
@@ -249,12 +250,12 @@
       <div class="container cta">
         <div class="cta-copy">
           <p class="eyebrow"><span></span> WebSafe</p>
-          <h2>Weniger Überraschungen.<br>Mehr Kontrolle.</h2>
-          <p>Installiere WebSafe für Brave oder prüfe jede Schutzregel direkt im öffentlichen Quellcode.</p>
+          <h2>Fewer surprises.<br>More control.</h2>
+          <p>Install WebSafe for Chrome, Brave and Chromium-based browsers or inspect every protection rule in the public source code.</p>
         </div>
         <div class="actions">
-          <a class="button button-light" href="#installation">Jetzt installieren</a>
-          <a class="button button-outline" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Auf GitHub ansehen</a>
+          <a class="button button-light" href="https://chromewebstore.google.com/detail/mkmceahekngdjiplgonjfjkgldblimjg?utm_source=item-share-cb" target="_blank" rel="noopener">Install now</a>
+          <a class="button button-outline" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Source code on GitHub</a>
         </div>
       </div>
     </section>
@@ -264,18 +265,18 @@
     <div class="container footer-grid">
       <div class="footer-about">
         <a class="brand footer-brand" href="index.html"><img src="assets/websafe-icon.png" width="44" height="44" alt=""><span>WebSafe</span></a>
-        <p>Lokaler Open-Source-Schutz für ein ruhigeres und sichereres Web.</p>
+        <p>Local, open-source protection for a calmer, safer web.</p>
       </div>
       <div>
-        <p class="footer-title">Produkt</p>
-        <ul><li><a href="#funktionen">Funktionen</a></li><li><a href="#schutz">Schutzebenen</a></li><li><a href="#installation">Installation</a></li><li><a href="#fragen">FAQ</a></li></ul>
+        <p class="footer-title">Product</p>
+        <ul><li><a href="#funktionen">Features</a></li><li><a href="#schutz">Protection layers</a></li><li><a href="#installation">Installation</a></li><li><a href="#fragen">FAQ</a></li></ul>
       </div>
       <div>
-        <p class="footer-title">Projekt</p>
-        <ul><li><a href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Quellcode</a></li><li><a href="https://github.com/rudolfstepan/websafe/issues" target="_blank" rel="noopener">Issues</a></li><li><a href="https://github.com/rudolfstepan/websafe/blob/main/LICENSE" target="_blank" rel="noopener">MIT-Lizenz</a></li><li><a href="privacy.html">Datenschutz</a></li></ul>
+        <p class="footer-title">Project</p>
+        <ul><li><a href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Source code</a></li><li><a href="https://github.com/rudolfstepan/websafe/issues" target="_blank" rel="noopener">Issues</a></li><li><a href="https://github.com/rudolfstepan/websafe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li><li><a href="privacy.html">Privacy</a></li></ul>
       </div>
     </div>
-    <div class="container footer-bottom"><span>© <span data-year>2026</span> WebSafe Contributors.</span><span>Gebaut ohne Tracking.</span></div>
+    <div class="container footer-bottom"><span>© <span data-year>2026</span> WebSafe Contributors.</span><span>Built without tracking.</span></div>
   </footer>
 </body>
 </html>

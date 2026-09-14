@@ -307,3 +307,21 @@ h3 { margin: 0 0 11px; font-size: 1.24rem; font-weight: 730; letter-spacing: -.0
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+.language-switch { display: inline-flex; flex: 0 0 auto; gap: 3px; padding: 3px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+.language-switch[hidden] { display: none; }
+.language-switch button { min-width: 40px; min-height: 38px; padding: 5px 8px; border: 0; border-radius: 7px; color: var(--green-900); background: transparent; font-size: .8rem; font-weight: 750; cursor: pointer; }
+.language-switch button[aria-pressed="true"] { color: #fff; background: var(--green-700); }
+.language-switch button:hover { background: var(--mint-100); color: var(--green-950); }
+.error-page > .language-switch { justify-self: end; margin-bottom: 28px; }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .nav { gap: 12px; }
+  .nav-links { gap: 12px; }
+  .nav-links a { font-size: .8rem; }
+}
+@media (max-width: 760px) {
+  .nav { gap: 10px; flex-wrap: wrap; padding-block: 10px; }
+  .nav .brand { margin-right: auto; }
+  .nav-toggle { order: 3; }
+  .nav > .compact-button { order: 4; width: 100%; margin-bottom: 4px; }
+}

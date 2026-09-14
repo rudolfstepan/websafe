@@ -1,70 +1,75 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#0b7a58">
-  <meta name="description" content="Datenschutzerklärung der lokalen WebSafe Browser-Erweiterung.">
-  <title>Datenschutz – WebSafe</title>
+  <meta name="description" content="Privacy policy for the local WebSafe browser extension.">
+  <title>Privacy – WebSafe</title>
   <link rel="icon" type="image/png" href="assets/websafe-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="translations.js" defer></script>
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Zum Inhalt springen</a>
+  <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-header" id="site-header">
-    <nav class="nav container" aria-label="Hauptnavigation">
+    <nav class="nav container" aria-label="Main navigation">
       <a class="brand" href="index.html"><img src="assets/websafe-icon.png" width="44" height="44" alt=""><span>WebSafe</span></a>
-      <a class="button button-secondary compact-button" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+      <a class="button button-secondary compact-button" href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">Source code on GitHub <span aria-hidden="true">↗</span></a>
+      <div class="language-switch" data-language-switch role="group" aria-label="Choose language" hidden><button type="button" data-language="de" lang="de" aria-label="Deutsch" aria-pressed="false">DE</button><button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="true">EN</button></div>
     </nav>
   </header>
 
   <main id="content">
     <section class="legal-hero">
       <div class="container">
-        <p class="eyebrow"><span></span> Transparent und lokal</p>
-        <h1>Datenschutz ohne Kleingedrucktes.</h1>
-        <p>WebSafe verarbeitet Schutzsignale lokal im Browser. Es gibt keine Telemetrie, keine Benutzerkonten und keine Übertragung an den Entwickler.</p>
+        <p class="eyebrow"><span></span> Transparent and local</p>
+        <h1>Privacy without the fine print.</h1>
+        <p>WebSafe processes protection signals locally in your browser. There is no telemetry, no user account and no data sent to the developer.</p>
       </div>
     </section>
 
     <article class="container legal-content">
-      <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Zurück zu WebSafe</a>
+      <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to WebSafe</a>
 
-      <h2>Kurzfassung</h2>
-      <p>WebSafe sendet keine besuchten URLs, Seiteninhalte oder Downloadinformationen an den Entwickler oder einen externen Analysedienst. Die Erweiterung arbeitet innerhalb des lokalen Brave- beziehungsweise Chromium-Profils.</p>
+      <h2>Overview</h2>
+      <p>WebSafe does not send visited URLs, page content or download information to the developer or an external analytics service. The extension works within the local browser profile in Chrome, Brave and Chromium-based browsers.</p>
 
-      <h2>Lokal verarbeitete Daten</h2>
+      <h2>Data processed locally</h2>
       <ul>
-        <li>URL und Hostname einer besuchten Seite für lokale Filterentscheidungen</li>
-        <li>Seitentitel, Metadaten und begrenzte sichtbare Textausschnitte</li>
-        <li>Links und Medienadressen zur Erkennung verdächtiger Einbettungen</li>
-        <li>Dateiname, Quelle, MIME-Typ und Braves Gefahrenstatus eines Downloads</li>
-        <li>Einstellungen, Ausnahmeliste und aggregierte Blockzähler</li>
+        <li>The URL and hostname of a visited page for local filtering decisions</li>
+        <li>Page titles, metadata and limited excerpts of visible text</li>
+        <li>Links and media addresses to identify suspicious embedded content</li>
+        <li>A download's filename, source, MIME type and browser-reported danger status</li>
+        <li>Settings, exception lists and aggregate blocking counters</li>
       </ul>
 
-      <h2>Speicherung</h2>
-      <p>Einstellungen, Domain-Ausnahmen und Zähler werden mit <code>chrome.storage.local</code> im lokalen Browserprofil gespeichert. WebSafe betreibt keinen Server und besitzt keine zentrale Nutzerdatenbank.</p>
+      <h2>Storage</h2>
+      <p>Settings, domain exceptions and counters are stored using <code>chrome.storage.local</code> in the local browser profile. WebSafe operates no server and has no central user database.</p>
 
-      <h2>Datenübertragung</h2>
-      <p>WebSafe selbst überträgt keine Schutzdaten. Externe Links auf dieser Website führen zu GitHub und unterliegen dessen eigener Datenschutzerklärung. Braves eingebautes Safe Browsing arbeitet unabhängig von WebSafe nach den Einstellungen des Browsers.</p>
+      <p>This website stores your manually selected language locally in your browser. Without a saved choice, it uses the browser language; languages other than German fall back to English.</p>
 
-      <h2>Berechtigungen</h2>
-      <p>Die Erweiterung benötigt Seitenzugriff, um Pop-ups, Navigationen und Overlays zu erkennen, sowie die Download-Berechtigung, um riskante Downloads rechtzeitig abzubrechen. Die Berechtigungen werden ausschließlich für die dokumentierten Schutzfunktionen verwendet.</p>
+      <h2>Data transfers</h2>
+      <p>WebSafe itself does not transmit protection data. External links on this website lead to the Chrome Web Store (Google) and GitHub, where the respective providers' privacy policies apply. Your browser's built-in Safe Browsing protection operates independently of WebSafe according to your browser settings.</p>
 
-      <h2>Daten löschen</h2>
-      <p>Beim Entfernen der Erweiterung löscht Brave den zugehörigen Extension-Speicher. Einstellungen können außerdem durch eine Neuinstallation zurückgesetzt werden.</p>
+      <h2>Permissions</h2>
+      <p>The extension needs page access to detect pop-ups, navigation and overlays, plus download permission to cancel risky downloads in time. Permissions are used exclusively for the documented protection features.</p>
+
+      <h2>Deleting data</h2>
+      <p>When you remove the extension, the browser deletes its storage. Reinstalling the extension can also reset its settings.</p>
 
       <h2>Open Source</h2>
-      <p>Die vollständige Implementierung, alle Filterregeln und die automatisierten Tests sind im <a href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">öffentlichen GitHub-Repository</a> einsehbar.</p>
+      <p>The complete implementation, all filter rules and automated tests are available in the <a href="https://github.com/rudolfstepan/websafe" target="_blank" rel="noopener">public GitHub repository</a>.</p>
 
-      <h2>Stand</h2>
-      <p>11. September 2026</p>
+      <h2>Last updated</h2>
+      <p>14 September 2026</p>
     </article>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-bottom legal-footer"><span>© <span data-year>2026</span> WebSafe Contributors.</span><span><a href="index.html">Startseite</a> · <a href="https://github.com/rudolfstepan/websafe/blob/main/LICENSE" target="_blank" rel="noopener">MIT-Lizenz</a></span></div>
+    <div class="container footer-bottom legal-footer"><span>© <span data-year>2026</span> WebSafe Contributors.</span><span><a href="index.html">Home</a> · <a href="https://github.com/rudolfstepan/websafe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></span></div>
   </footer>
 </body>
 </html>
